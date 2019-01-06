@@ -8,6 +8,7 @@
 * Management Web Interface
 * CLI
 * Cross Platform
+* FIFO
 * Binding is linking Exchange > Queue
 
 ![alt text](img/rabbitMQ.png "Rabbit MQ")
@@ -258,3 +259,7 @@ using (var bus = RabbitHutch.CreateBus("host=localhost;publishederConfirms=true;
 ```
 
 ![alt text](img/topic-pattern.png "Topic Pattern")
+
+## Scaling 
+
+![alt text](img/scaling.png "Scaling")
