@@ -2,8 +2,18 @@
 
 ## What is RabbitMQ
 * AMPQ = Advanced Message Queue Protocol
+* Reliability
+* Routing
+* Clustering and High Availability
+* Management Web Interface
+* CLI
+* Cross Platform
+* Binding is linking Exchange > Queue
 
 ![alt text](img/rabbitMQ.png "Rabbit MQ")
+
+
+![alt text](img/ack.png "Acknowledge")
 
 ## Installing Server
 1. Install RabbitMQ - https://www.rabbitmq.com/install-windows.html
@@ -26,13 +36,18 @@ Password: guest
 * http://easynetq.com/
 
 ## Exchanges
+1. Direct Exchange
+2. Fanout Exchange
+3. Topic Exchange
+4. Headers Exchange
+
 * Name = Name of the exchange. Default is ""
 * Durability = Persist message to disk
 * Auto Delete = Delete exchange after use
 * Arguments = Message broker dependent arguemnets
 
 ### Direct Exchange
-* Routing Key = Queue Name
+* Routing Key = Queue Name by default
 * Like MSMQ
 
 ![alt text](img/direct.png "Direct Exchange")
